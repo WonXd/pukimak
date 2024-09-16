@@ -8,7 +8,7 @@ function feedback404()
 }
 
 if (isset($_GET['belanja'])) {
-    $filename = "brandlist.php";
+    $filename = "brandlist.txt";
     $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     $target_string = strtolower($_GET['belanja']);
     foreach ($lines as $item) {
